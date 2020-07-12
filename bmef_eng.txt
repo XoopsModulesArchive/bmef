@@ -1,0 +1,67 @@
+Bluemoon.Multi-Entry Form Document
+--------------------------------------------------------------------------------
+Module Name  : BMEF
+Auther       : dashboard / Y.Sakai ( webmaster@bluemooninc.biz )
+Company      : Bluemoon inc. ( http://www.bluemooninc.biz )
+Start date   : 21,Jun,2004
+License under: GPL
+--------------------------------------------------------------------------------
+Base Mod. By : phpESP V1.6.1 James Flemer <jflemer@alum.rpi.edu>
+--------------------------------------------------------------------------------
+******************
+Update Information
+******************
+v0.01 2004/07/24 Alpha release.
+v0.02 2004/07/25 The mail output is carried out in the same order as a display.
+v0.03 2004/08/13 Move folder setting from phpESP.ini.php to config.php.
+v0.04 2004/08/21 Bugfix about URL for image files.
+v0.05 2004/08/24 Support for owner to Xoops group who can see survey result.
+v0.06 2004/08/26 Add parameter 'csv_charset' for CSV file encording in phpESP.ini.php.
+v0.07 2004/08/26 The result page was reformed.
+v0.08 2004/09/14 Change email 'from' address to $xoopsUser->email who made survey. Add French by Outch.  
+v0.09 2004/09/18 Bugfix for non-support about PHP mb-functions server.
+v0.10 2004/10/04 Bugfix about undefined nortice $referer on handler.php.
+v0.11 2004/10/11 Bugfix about status change to activate survey.
+
+************
+Introduction
+************
+The BMEF is XOOPS 2 multi entry form module. You can make it any kinds of form.
+(Reservation, shopping, report, survey and much more.)
+To make a form, you don't need a program, html and database skill. Just use only the browser!
+And you can receive via email with attached files!
+Plus, you can see the survey results.
+
+If it combines with PopnupBlog, you can save a log with photographs. 
+This module has much ability, I think.
+(Such as construction management, production control, and clinical records, etc).
+
+***************
+Rapidly Install
+***************
+1.Extract these module files. (XOOPS_ROOT./module)
+2.Install from module admin,
+3.Customize the admin/phpESP.ini.php
+ You can set a several language for the 'i18n' here.
+ but xoops language folder has English,Japanese and French only.
+ I'll port to xoops style at the future.
+  $ESPCONFIG['default_lang']
+  $ESPCONFIG['charset']
+  $ESPCONFIG['enc_charset']
+DONE! 
+
+But this version is 'as is', and still going on to porting.
+
+********************
+Work with PopnupBlog
+********************
+1:Login to Xoops as Admin.
+2:Make a Blog who want to get from bmef and set primary email address that same as $xoopsUser->email.
+  (ex. ID:admin uid:1 email:admin@foo.com)
+3:Login as who want to receiveing bmef.
+  (ex. ID:admin)
+4:Make a survey at bmef. and set a PopnupBlog recivieng address to email.
+  (ex. popnup@foo.com)
+
+Happy Hacking!
+Yoshi.

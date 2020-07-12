@@ -1,0 +1,24 @@
+<!-- begin of bmef block -->
+<{* $Id: bmef_list.html,v 1.14.1 2004/06/13 21:01:00 dashboard Exp $ *}>
+<table  width="90%" class="outer" cellspacing="1">
+  <tr>
+    <th><{$_MD_BMEF_LIST_TITLE}></th>
+    <th><{$_MD_BMEF_LIST_SUBTITLE}></th>
+    <th><{$_MD_BMEF_LIST_UNAME}></th>
+    <th><{$_MD_BMEF_LIST_DATE}></th>
+  </tr>
+<{foreach item=list from=$survey}>
+  <tr class="<{cycle values="even,odd"}>">
+    <td><a href='<{$list.url}>'><{$list.title}></a></td>
+    <td><{$list.subtitle}></td>
+    <td><{$list.uname}></td>
+    <td><{$list.last_update_l}></td>
+  </tr>
+<{/foreach}>
+<tr>
+<td align="right" valign="bottom" colspan="4"><font size="-1">Multi-EntryForm v<{$version}> by 
+<a href="http://www.bluemooninc.biz/" target="_blank">Bluemoon inc.</a>
+</font>
+</td></tr>
+</table>
+<!-- end of popnup blog block -->

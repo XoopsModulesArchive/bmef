@@ -1,0 +1,18 @@
+<!-- begin of popnup blog block -->
+<table  width="90%" class="outer" cellspacing="1">
+  <tr>
+    <th><{$block._MB_BMEF_LIST_TITLE}></th>
+    <th><{$block._MB_BMEF_LIST_SUBTITLE}></th>
+    <th><{$block._MB_BMEF_LIST_UNAME}></th>
+    <th><{$block._MB_BMEF_LIST_DATE}></th>
+  </tr>
+<{foreach item=list from=$block.survey}>
+  <tr class="<{cycle values="even,odd"}>">
+    <td><a href='<{$list.url}>'><{$list.title}></a></td>
+    <td><{$list.subtitle}></td>
+    <td><{$list.uname}></td>
+    <td><{$list.last_update_l}></td>
+  </tr>
+<{/foreach}>
+</table>
+<!-- end of popnup blog block -->

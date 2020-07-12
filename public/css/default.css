@@ -1,0 +1,12 @@
+/* $Id: default.css,v 1.3 2002/06/22 13:54:53 greggmc Exp $ */
+.qnInnerTd {
+        background-color:none;
+        font-family: default;
+        font-size: ;
+        font-style: normal;
+        text-transform: none;
+        color: #000000;
+        text-decoration: none;
+        width:26px;
+        vertical-align:text-top;
+}
